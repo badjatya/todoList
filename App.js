@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Task from "./components/Task"
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
 
         <View style={styles.items}>
           {/* This is where all the task will go */}
+          <Task text="Task 1" />
+          <Task text="Task 2" />
         </View>
       </View>
     </View>
