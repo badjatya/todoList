@@ -9,6 +9,10 @@ const App = () => {
       {/* Today's Task */}
       <View style={styles.tasksWrapper}>
         <Text style={styles.sectionTitle}>Today's Task</Text>
+
+        <View style={styles.items}>
+          {/* This is where all the task will go */}
+        </View>
       </View>
     </View>
   );
@@ -17,11 +21,17 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#E8EAED',
   },
-  text:{
-
-  }
+  tasksWrapper: {
+    paddingTop:80,
+    paddingHorizontal:20,
+  },
+  sectionTitle: {
+    fontSize:24,
+    fontWeight:'bold',
+  },
+  items: {},
 });
 
 export default App;
